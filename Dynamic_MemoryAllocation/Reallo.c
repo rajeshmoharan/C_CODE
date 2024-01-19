@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main()
 {
-    int sub, *p;
+    int sub, *p, avrageMark;
     printf("Enter subject:");
 
     scanf("%d", &sub);
@@ -32,6 +32,7 @@ int main()
         scanf("%d", &newSub);
         // reallocating memory
         p = (int *)realloc(p, sizeof(int) * sub);
+
         for (int i = 0; i < newSub; i++)
         {
             printf("Enter Mark :");
@@ -40,12 +41,15 @@ int main()
         sub = newSub;
     }
 
-    printf("_____Final Subject Mark_______");
+    printf("_____Final Subject Mark_______\n");
 
     for (int i = 0; i < sub; i++)
     {
-        printf("Marks are : %d\n", p[i]);
+        avrageMark = avrageMark + p[i];
     }
+
+    printf("Avrage Mark : %d percentage\n",avrageMark);
+    printf("Avrage Mark : %d percentage",avrageMark/sub);
 
     free(p);
     return 0;
