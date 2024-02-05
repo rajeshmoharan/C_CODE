@@ -3,6 +3,9 @@
         "string.h": "c",
         "stdio.h": "c",
         "stdlib.h": "c",
-        "conio.h": "c"
+        "conio.h": "c",
+        "cstdio": "c",
+        "fstream": "c",
+        "iostream": "c"
     }
 }

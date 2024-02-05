@@ -15,7 +15,7 @@ int main()
     char choice;
 
     do
-    {
+    {  
         printf("\n _______________MENU__________");
 
         printf("\n 1. Print the even-valued elements of the array");
@@ -32,8 +32,8 @@ int main()
 
         printf("\n 7. Exit");
 
-        printf("\n\n  Enter Your Choice : ");
-        scanf("%d", &option);
+        printf("\n\n  Enter Your Choice : ");  
+        scanf("%d", &option);  //1
 
         switch (option)
         {
@@ -64,6 +64,7 @@ int main()
         }
         printf("Do you want to continue (Y/N)? ");
         scanf(" %s", &choice);
+        //  y == 'Y' || y == 'y'
     } while (choice == 'Y' || choice == 'y');
     return 0;
 }
@@ -74,20 +75,25 @@ void even()
     int i, num, even = 0;
 
     printf("\n  Enter the size of an array : ");
-    scanf("%d", &num);
-
+    scanf("%d", &num);  //5
+        //array[5]
     int array[num]; // Initializing array of same size
     printf("\n  Enter the elements of the array : ");
+    //0<5 1<5 2<5 3<5 4<5
     for (i = 0; i < num; i++)
     {
+        // 0 1 2 3 4
+      // 10 20 50 51 45       
         scanf("%d", &array[i]);
     }
     printf("\n  Even numbers in the array are : ");
+     // 10 20  50 51 45
     for (i = 0; i < num; i++)
     {
         if (array[i] % 2 == 0)
         {
-            even++;
+            even++; 
+                // array[0] = 10 20 50
             printf("%d \t", array[i]);
         }
     }
