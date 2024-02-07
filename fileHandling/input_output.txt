@@ -1,0 +1,2 @@
+User Input: I am Genius
+Program Output: I am Genius
