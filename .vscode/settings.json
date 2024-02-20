@@ -6,6 +6,7 @@
         "conio.h": "c",
         "cstdio": "c",
         "fstream": "c",
-        "iostream": "c"
+        "iostream": "c",
+        "math.h": "c"
     }
 }
